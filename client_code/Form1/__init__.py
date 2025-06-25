@@ -1,6 +1,6 @@
 from ._anvil_designer import Form1Template
 from anvil import *
-
+import anvil.http
 
 class Form1(Form1Template):
   def __init__(self, **properties):
@@ -20,8 +20,9 @@ class Form1(Form1Template):
 
   def button_3_click(self, **event_args):
     """This method is called when the button is clicked"""
-    import requests
+
     url = "http://localhost:8000/items"
-    response = requests.get(url)
+    
+    response = anvil.http.request(url, method="GET", json=True)
     print(response.json())
-    pass
+
