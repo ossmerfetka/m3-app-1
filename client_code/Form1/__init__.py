@@ -23,6 +23,6 @@ class Form1(Form1Template):
 
     url = "http://localhost:8000/items"
     
-    response = anvil.http.request(url, method="GET", json=True)
-    print(response.json())
+    response = anvil.http.request(url, method="GET")
+    print(response[0])
 
