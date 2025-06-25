@@ -13,3 +13,7 @@ class Form1(Form1Template):
     """This method is called when the button is clicked"""
     print('elo')
     pass
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass
