@@ -42,7 +42,7 @@ components:
       name: button_2
       properties: {role: filled-button, text: button_2}
       type: Button
-    layout_properties: {full_width_row: false, grid_position: 'YSUMDD,MCWVOI', row_background: 'theme:Primary'}
+    layout_properties: {full_width_row: false, grid_position: 'YSUMDD,MCWVOI KBUMRU,WEWUQN', row_background: 'theme:Primary'}
     name: column_panel_5
     properties:
       role: outlined-card
@@ -50,6 +50,10 @@ components:
         margin: [null, null, null, '0']
         padding: [null, null, null, '15']
     type: ColumnPanel
+  - layout_properties: {grid_position: 'YSUMDD,MCWVOI IRFBVE,YJPWYJ'}
+    name: repeating_panel_1
+    properties: {item_template: Form1.ItemTemplate}
+    type: RepeatingPanel
   layout_properties: {slot: default}
   name: column_panel_2
   properties: {wrap_on: never}

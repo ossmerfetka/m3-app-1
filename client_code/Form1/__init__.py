@@ -5,8 +5,14 @@ import anvil.http
 class Form1(Form1Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
+    print('shpwn\n\n')
+    url = "http://localhost:8000/items"
+    items = anvil.http.request(url, method="GET", json=True)
+    print(items)
+    #items = [{'name':'elo', 'description':'pomidory'}]
+    self.repeating_panel_1.items = items
+    
     self.init_components(**properties)
-
     # Any code you write here will run before the form opens.
 
   def button_2_click(self, **event_args):
@@ -23,6 +29,9 @@ class Form1(Form1Template):
 
     url = "http://localhost:8000/items"
     
-    response = anvil.http.request(url, method="GET")
-    print(response[0])
+    response = anvil.http.request(url, method="GET", json=True)
+    print(response)
 
+  def form_show(self, **event_args):
+    print('shpwn\n\n')
+    

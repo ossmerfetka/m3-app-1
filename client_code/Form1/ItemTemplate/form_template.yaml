@@ -1,0 +1,11 @@
+components:
+- layout_properties: {grid_position: 'TONEPM,GBISKZ'}
+  name: label_name
+  properties: {}
+  type: Label
+- layout_properties: {grid_position: 'TONEPM,BUFIRH'}
+  name: label_price
+  properties: {}
+  type: Label
+container: {type: ColumnPanel}
+is_package: true
