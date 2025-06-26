@@ -12,11 +12,12 @@ class Form1(Form1Template):
     #items = [{'name':'elo', 'description':'pomidory'}]
     self.repeating_panel_1.items = items
     self.button_3.visible = False
-    self.label = ItemTemplate_copy()
-    self.column_test.remove_component(self.item_template)
-    self.column_test.add_component(s)
-
-
+    self.label = Label(text="fasfasfsasaf")
+    # self.column_test.remove_component(self.item_template)
+    # self.column_test.add_component(self.label)
+    self.column_test.clear()
+    self.button = Button(text="This is a button", visible=True)
+    self.column_test.add_component(self.button)
     
     self.init_components(**properties)
     # Any code you write here will run before the form opens.
