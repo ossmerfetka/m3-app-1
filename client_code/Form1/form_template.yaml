@@ -36,10 +36,6 @@ components:
     name: outlined_card_1
     properties: {role: outlined-card}
     type: ColumnPanel
-  - layout_properties: {grid_position: 'YSUMDD,BRHZPM NAQSIR,UNDBVW'}
-    name: repeating_panel_2
-    properties: {item_template: Form1.ItemTemplate2}
-    type: RepeatingPanel
   - components:
     - event_bindings: {click: button_1_click}
       layout_properties: {grid_position: 'SWUJDQ,JGRPPB'}
@@ -62,6 +58,23 @@ components:
     name: repeating_panel_1
     properties: {item_template: Form1.ItemTemplate}
     type: RepeatingPanel
+  - components:
+    - layout_properties: {grid_position: 'UUGYNN,DKQJAS'}
+      name: button_6
+      properties: {text: button_6}
+      type: Button
+    - layout_properties: {grid_position: 'UUGYNN,HQPHLW'}
+      name: outlined_button_1
+      properties: {role: outlined-button, text: outlined_button_1}
+      type: Button
+    - layout_properties: {grid_position: 'UUGYNN,ARMUPM'}
+      name: button_7
+      properties: {text: button_7}
+      type: Button
+    layout_properties: {grid_position: 'EFPWUA,IQMPKH'}
+    name: column_panel_4
+    properties: {}
+    type: ColumnPanel
   layout_properties: {slot: default}
   name: column_panel_2
   properties: {wrap_on: never}

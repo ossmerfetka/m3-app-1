@@ -11,23 +11,8 @@ class Form1(Form1Template):
     print(items)
     #items = [{'name':'elo', 'description':'pomidory'}]
     self.repeating_panel_1.items = items
-    self.repeating_panel_2.items = items
-    self.repeating_panel_2.layout = 'horizontal'
 
-    for item in self.items:
-      # Add a custom panel for each image
-      item_panel = FlowPanel()
-      item_panel.width = '200px'  # Optional: control the width of each item
 
-      # Add an image component to each item
-      image = Image(source=f"http://localhost:8000/{item['image_path']}")
-      image.width = 150  # Control the width of the image
-
-      # Add image to the panel
-      item_panel.add_component(image)
-
-      # Add the item panel to the repeating panel
-      self.repeating_panel_2.add_component(item_panel)
 
 
     
