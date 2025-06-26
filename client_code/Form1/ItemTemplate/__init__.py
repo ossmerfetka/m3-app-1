@@ -10,4 +10,4 @@ class ItemTemplate(ItemTemplateTemplate):
   def form_show(self, **event_args):
     self.label_name.text = self.item['name']
     self.label_price.text = self.item['description']
-    self.image.source = self.item['image_path']
+    self.image.source = f"http://localhost:8000/{self.item['image_path']}"
