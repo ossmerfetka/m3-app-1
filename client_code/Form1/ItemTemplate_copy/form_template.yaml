@@ -1,0 +1,41 @@
+components:
+- layout_properties: {grid_position: 'TONEPM,KULGZD'}
+  name: label_1
+  properties:
+    align: right
+    spacing:
+      margin: [null, null, 0, null]
+      padding: [null, null, 0, null]
+    text: 'Name:'
+  type: Label
+- layout_properties: {grid_position: 'TONEPM,KULGZD DYUBER,OXMQPT'}
+  name: label_2
+  properties:
+    align: right
+    spacing:
+      margin: [0, null, 0, null]
+      padding: [0, null, 0, null]
+    text: 'Description:'
+  type: Label
+- layout_properties: {grid_position: 'TONEPM,GBISKZ'}
+  name: label_name
+  properties:
+    spacing:
+      margin: [null, null, 0, null]
+      padding: [null, null, 0, null]
+  type: Label
+- layout_properties: {grid_position: 'TONEPM,GBISKZ QWKLBW,APVRJR'}
+  name: label_price
+  properties:
+    spacing:
+      margin: [0, null, 0, null]
+      padding: [0, null, 0, null]
+  type: Label
+- layout_properties: {grid_position: 'TONEPM,IOGDVH'}
+  name: image
+  properties: {height: 109}
+  type: Image
+container:
+  properties: {col_widths: '{"GBISKZ":25,"KULGZD":13}'}
+  type: ColumnPanel
+is_package: true

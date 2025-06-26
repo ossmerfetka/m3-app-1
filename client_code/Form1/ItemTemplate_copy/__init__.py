@@ -1,8 +1,7 @@
-from ._anvil_designer import ItemTemplateTemplate
+from ._anvil_designer import ItemTemplate_copyTemplate
 from anvil import *
 
-class ItemTemplate(ItemTemplateTemplate):
-
+class ItemTemplate_copy(ItemTemplate_copyTemplate):
   def __init__(self, **properties):
     self.init_components(**properties)
     self.form_show()
