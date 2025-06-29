@@ -1,0 +1,37 @@
+components:
+- components:
+  - components:
+    - layout_properties: {col_xs: 0, row: AQEJKJ, width_xs: 12}
+      name: xy_panel_1
+      properties: {height: 100, role: elevated-card}
+      type: XYPanel
+    - layout_properties: {col_xs: 0, row: AQEJKJ, width_xs: 4}
+      name: image_1_copy
+      properties:
+        margin: ['0', null, '0', null]
+      type: Image
+    - layout_properties: {col_xs: 0, row: VGWZKH, width_xs: 4}
+      name: image_1
+      properties:
+        height: '200'
+        margin: ['0', null, '0', null]
+        vertical_align: center
+      type: Image
+    layout_properties: {full_width_row: false, grid_position: 'UCQWEK,FRTWGF'}
+    name: grid_panel_1
+    properties:
+      spacing:
+        margin: ['0', null, '0', null]
+    type: GridPanel
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true
